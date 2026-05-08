@@ -30,7 +30,7 @@ Bitwarden hat die Auto-Update-Funktion aus den offiziellen `.deb`-Paketen entfer
 1. Skript herunterladen und speichern, z.B. nach `/opt/bitwarden-updater/`:
 
 ```bash
-sudo mkdir -p /opt/bitwarden-updater
+sudo mkdir -p /opt/bitwarden-auto-updater
 sudo curl -fL https://raw.githubusercontent.com/X00LA/Bitwarden-Auto-Updater/refs/heads/main/German/bitwarden-auto-updater.sh \
     -o /opt/bitwarden-auto-updater/bitwarden-auto-updater.sh
 sudo chmod +x /opt/bitwarden-auto-updater/bitwarden-auto-updater.sh
