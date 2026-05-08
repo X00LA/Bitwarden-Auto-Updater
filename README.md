@@ -31,15 +31,15 @@ Bitwarden removed the auto-update functionality from their official `.deb` packa
 
 ```bash
 sudo mkdir -p /opt/bitwarden-updater
-sudo curl -fL https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/bitwarden-update.sh \
-    -o /opt/bitwarden-updater/bitwarden-update.sh
-sudo chmod +x /opt/bitwarden-updater/bitwarden-update.sh
+sudo curl -fL https://raw.githubusercontent.com/X00LA/Bitwarden-Auto-Updater/refs/heads/main/English/bitwarden-auto-updater.sh \
+    -o /opt/bitwarden-auto-updater/bitwarden-update.sh
+sudo chmod +x /opt/bitwarden-updater/bitwarden-auto-updater.sh
 ```
 
 2. Run a one-time test:
 
 ```bash
-sudo /opt/bitwarden-updater/bitwarden-update.sh
+sudo /opt/bitwarden-updater/bitwarden-auto-updater.sh
 ```
 
 ---
@@ -77,7 +77,7 @@ sudo crontab -e
 Add the following line (here: daily at 09:00 AM):
 
 ```
-0 9 * * * /opt/bitwarden-updater/bitwarden-update.sh >> /var/log/bitwarden-update.log 2>&1
+0 9 * * * /opt/bitwarden-updater/bitwarden-auto-updater.sh >> /var/log/bitwarden-update.log 2>&1
 ```
 
 Cron syntax overview:
